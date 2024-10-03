@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+    width:900px;
+}
+
+#title {
+    color: blue;
+    display: block;
+    text-align: center;
+}
+
+#main_plates {
+    text-decoration-style: none;
+    margin: 30px 10px;
+}
+
+#main_plates li {
+    margin: 20px;
+    width:28%;
+    float:left;
+    list-style-type: none;
+}
+
+img {
+    width:150px;
+
+}
+
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+h1 {
+    background-color: lightblue;
+    padding: 15px 15px;
+    border-radius: 15px;
+    display: inline-block;
+}

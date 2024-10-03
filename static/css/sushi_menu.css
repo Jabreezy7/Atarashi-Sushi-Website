@@ -1,0 +1,63 @@
+body {
+    text-align: center;
+    width:900px;
+}
+
+#title {
+    color: blue;
+    display: block;
+    text-align: center;
+}
+
+#sushis {
+    float:left;
+    width:55%;
+    text-decoration-style: none;
+    margin: 30px 0px;
+    background-color: aqua;
+}
+
+#sushis h3 {
+    margin:0px;
+}
+
+#sushis li {
+    margin: 20px;
+    width:20%;
+    float:left;
+    list-style-type: none;
+}
+
+img {
+    width:50px;
+    height:125px;
+    margin-bottom: 5px;
+}
+
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+#order_form {
+    margin: 30px 5px;
+    float:left;
+    width:35%;
+    background-color: darkorange;
+}
+
+#customer_info {
+    clear:both;
+    margin-top:20px;
+    font-size: 1.2em;
+}
+
+#place_order {
+    margin-top:20px;
+    font-size: 1.2em;
+}
+
+#order_summary {
+    font-size: 1.5em;
+}

@@ -1,0 +1,28 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/kitchen.css">
+    <script type="text/javascript" src="../static/js/kitchen.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Kitchen - List of current orders</h1>
+    <ul id="customer_order_ul">
+        {% for order in orders %}
+            <li class="customer_order_li">
+                <h3>Customer Name: {{order.customer_name}} </h3>
+                <ul>
+                    {% for current_order in order.orders.split(",") %}
+                        <li class="items"> {{current_order}} </li>
+                    {% endfor %}
+                </ul>
+                <a href="/delete/{{order.id}}">Delete Order</a> 
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>

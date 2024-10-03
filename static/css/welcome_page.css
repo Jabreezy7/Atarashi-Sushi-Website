@@ -1,0 +1,24 @@
+body {
+    text-align:center;
+    width:900px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+h1 {
+    background-color: lightblue;
+    padding: 15px 15px;
+    border-radius: 15px;
+    display:inline-block;
+}

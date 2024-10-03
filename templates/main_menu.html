@@ -1,0 +1,24 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/main_menu.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">Atarashy Main Menu</h1>
+    <ul id="main_plates">
+        {% for plate in plates %}
+            <li>
+                <a href="{{plate.url}}">
+                    <img src="{{plate.image}}" alt="">
+                    <h2>{{plate.type}}</h2>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>

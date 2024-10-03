@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/sushi_menu.css">
+    <script src="../static/js/sushi_menu.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title"> Sushi Menu </h1>
+    <ul id="sushis">
+        {% for sushi in sushis %}
+            <li id="{{sushi.id}}" onClick="handle_clicked('Sushi: {{sushi.type}} - Price: ${{sushi.price}}')">
+                <img src="{{sushi.image}}" alt="">
+                <h3>{{sushi.name}}</h3>
+                <h3>{{sushi.price}}</h3>
+            </li>
+        {% endfor %}
+    </ul>
+    <form id="order_form" action="{{order_request_ref}}" method="POST">
+        <h2>Order Summary</h2>
+        <textarea name="order_summary" id="order_summary" rows="10" cols="35"></textarea>
+        <div id="customer_info">
+            <label for="customer_name">Customer Name: </label>
+            <input type="text" id="customer_name" name="customer_name">
+        </div>
+        <input type="submit" id="place_order">
+    </form>
+</body>
+
+</html>
